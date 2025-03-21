@@ -1,0 +1,15 @@
+<h1>Expense Dashboard</h1>
+
+<div style="max-width: 600px; width: 100%;">
+  <canvas baseChart
+    [data]="chartData"
+    [options]="chartOptions"
+    [type]="'doughnut'">
+  </canvas>
+</div>
+
+<div>
+  <h2>Total Income: ${{ totalIncome }}</h2>
+  <h2>Total Expenses: ${{ totalExpense }}</h2>
+  <h2>Balance: ${{ balance }}</h2>
+</div>
